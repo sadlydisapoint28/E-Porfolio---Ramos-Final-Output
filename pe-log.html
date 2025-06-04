@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PE Activity Log - Health Portfolio</title>
+    <link rel="icon" type="image/png" href="images/LOGO.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pe-log-style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading PE Activity Log...</div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <div class="logo-container">
+                        <img src="images/LOGO.png" alt="Health Portfolio Logo" class="logo-image">
+                        <span class="logo-text">PE Activity Log</span>
+                    </div>
+                </div>
+                <h1 class="header-title">Physical Education Log</h1>
+                <p class="header-subtitle">Track Your Fitness Journey & Activities</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="food-diary.html" class="nav-link"><i class="fas fa-utensils"></i> Food Diary</a></li>
+                    <li><a href="pe-log.html" class="nav-link active"><i class="fas fa-running"></i> PE Log</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- PE Log Introduction -->
+            <section class="pe-log-intro">
+                <h2><i class="fas fa-dumbbell"></i> My Physical Education Journey</h2>
+                <p>Welcome to my PE activity log! Here you can explore my fitness journey, track my physical activities, and see how I maintain an active lifestyle as part of my health and wellness routine.</p>
+                <div class="intro-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">16</span>
+                        <span class="stat-label">Activities Logged</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">22+</span>
+                        <span class="stat-label">Hours Exercised</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Activity Types</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activity Timeline -->
+            <section class="exercise-records">
+                <h3><i class="fas fa-calendar-alt"></i> Exercise Activity Records</h3>
+                <div class="exercise-timeline" id="exerciseTimeline">
+                    <!-- Activities will be loaded here by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Activity Summary -->
+            <section class="activity-summary">
+                <h3><i class="fas fa-chart-bar"></i> Activity Summary</h3>
+                <div class="summary-grid">
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h4>Jogging</h4>
+                        <p>Primary activity for cardiovascular health and endurance</p>
+                        <span class="frequency">11 sessions</span>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-walking"></i>
+                        </div>
+                        <h4>Walking</h4>
+                        <p>Light cardio exercise for daily fitness maintenance</p>
+                        <span class="frequency">4 sessions</span>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-basketball-ball"></i>
+                        </div>
+                        <h4>Basketball</h4>
+                        <p>Team sport combining cardio, agility, and coordination</p>
+                        <span class="frequency">1 session</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reflection Section -->
+            <section class="pe-reflection">
+                <h3><i class="fas fa-lightbulb"></i> PE Reflection & Insights</h3>
+                <div class="reflection-content">
+                    <div class="reflection-item">
+                        <h4><i class="fas fa-heart"></i> Health Benefits Experienced</h4>
+                        <p>Through consistent physical activity, I've noticed significant improvements in my cardiovascular health, energy levels, and overall mood. Regular exercise has become an essential part of my daily routine.</p>
+                    </div>
+                    <div class="reflection-item">
+                        <h4><i class="fas fa-target"></i> Goals & Achievements</h4>
+                        <p>My primary goal is to maintain an active lifestyle while balancing academic responsibilities. I've successfully incorporated various activities like walking, running, and strength training into my weekly schedule.</p>
+                    </div>
+                    <div class="reflection-item">
+                        <h4><i class="fas fa-chart-line"></i> Progress & Future Plans</h4>
+                        <p>Looking ahead, I plan to diversify my activities further by including swimming and team sports. The key is consistency and gradually increasing intensity while listening to my body's needs.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="school-logos">
+                        <img src="images/WVSU_Logo.png" alt="WVSU Logo" class="footer-wvsu">
+                        <img src="images/LOGO.png" alt="Health Portfolio Logo" class="footer-logo">
+                    </div>
+                    <div class="school-info">
+                        <p class="school-name">West Visayas State University</p>
+                        <p class="school-subtitle">Bachelor of Arts in Political Science</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-text">
+                        <p>&copy; 2025 Created and Developed by Gabriel Ramos. All rights reserved.(R)</p>
+                        <p>Physical Education Activity Log & Fitness Journey Tracker</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="pe-log-script.js"></script>
+</body>
+</html>

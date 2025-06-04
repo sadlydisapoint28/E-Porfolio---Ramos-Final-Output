@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health E-Portfolio</title>
+    <link rel="icon" type="image/png" href="images/LOGO.png">
+    <link rel="shortcut icon" type="image/png" href="images/LOGO.png">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- External Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <div class="logo-container animate-spectacular-glow">
+                        <i class="fas fa-heartbeat"></i>
+                        <img src="images/LOGO.png" alt="Health Portfolio Logo" class="logo-image">
+                    </div>
+                </div>
+                <div class="header-text">
+                    <h1 class="header-title">Health Portfolio</h1>
+                    <p class="header-subtitle">Tracking my path to better health and wellness</p>
+                </div>
+                <div class="header-icons">
+                    <div class="icon-item animate-health-pulse">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="icon-item animate-float">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Welcome Section -->
+    <section id="home" class="welcome">
+        <div class="container">
+            <div class="welcome-content">
+                <h2 class="welcome-title">Welcome to My Health Journey</h2>
+                <p class="welcome-description">
+                    Explore my portfolio to learn about my experiences with nutrition, physical
+                    activity, health advocacy, and more.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Cards -->
+    <section class="main-content">
+        <div class="container">
+            <div class="cards-grid">
+                <!-- About Me Card -->
+                <div class="content-card card-pink hover-3d gpu-accelerated" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon animate-morph">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>About Me</h3>
+                        <p>Get to know me and my health journey.</p>
+                        <a href="#" class="card-link about-me-link" onclick="showAboutMeModal(); return false;">View →</a>
+                    </div>
+                </div>
+
+                <!-- Advocacy Card -->
+                <div class="content-card card-teal hover-rainbow gpu-accelerated" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon animate-health-pulse">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Advocacy</h3>
+                        <p>Discover how I advocate for health in my community.</p>
+                        <a href="#" class="card-link advocacy-link" onclick="showAdvocacyModal(); return false;">View →</a>
+                    </div>
+                </div>
+
+                <!-- Food Log Card -->
+                <div class="content-card card-green gpu-accelerated" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon animate-spectacular-glow">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Food Log</h3>
+                        <p>Interactive daily food tracking and nutrition.</p>
+                        <a href="#" class="card-link food-log-link" onclick="showFoodLogModal(); return false;">View →</a>
+                    </div>
+                </div>
+
+                <!-- PE Log Card -->
+                <div class="content-card card-orange hover-lift gpu-accelerated" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-icon animate-float">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>PE Log</h3>
+                        <p>Track my physical education activities and progress.</p>
+                        <a href="#" class="card-link pe-log-link" onclick="showPELogModal(); return false;">View →</a>
+                    </div>
+                </div>
+
+                <!-- COSINA Card -->
+                <div class="content-card card-red hover-glow gpu-accelerated" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-icon animate-holographic">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>COSINA</h3>
+                        <p>Cooking videos and healthy recipes collection.</p>
+                        <a href="#" class="card-link cosina-link" onclick="showCosinaModal(); return false;">View →</a>
+                    </div>
+                </div>
+
+                <!-- Health Trivia Card -->
+                <div class="content-card card-purple hover-rotate gpu-accelerated" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-icon animate-rainbow-border">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Health Trivia</h3>
+                        <p>Interactive quiz with interesting health facts.</p>
+                        <a href="#" class="card-link trivia-link" onclick="showTriviaModal(); return false;">View →</a>
+                    </div>
+                </div>
+
+                <!-- Reflection Card -->
+                <div class="content-card card-blue hover-scale gpu-accelerated" data-aos="fade-up" data-aos-delay="700">
+                    <div class="card-icon animate-heartbeat">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Reflection</h3>
+                        <p>My personal reflections on health and wellness.</p>
+                        <a href="#" class="card-link reflection-link" onclick="showReflectionModal(); return false;">View →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal for detailed content -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="school-logos">
+                        <img src="images/WVSU_Logo.png" alt="West Visayas State University" class="footer-wvsu">
+                        <img src="images/LOGO.png" alt="Health Portfolio Logo" class="footer-logo">
+                    </div>
+                    <div class="school-info">
+                        <p class="school-name">West Visayas State University</p>
+                        <p class="school-subtitle">Bachelor of Arts in Political Science</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-text">
+                        <p>&copy; 2025 Created and Developed by Gabriel Ramos. All rights reserved.(R)</p>
+                        <p>Health Portfolio & Wellness Journey Documentation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
