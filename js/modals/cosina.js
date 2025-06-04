@@ -12,7 +12,7 @@ function showCosinaModal() {
 
         <div class="modal-section">
             <div class="recipe-intro">
-                <h3>🥞 Rice Paper Kimchi Pancakes</h3>
+                <h3>🥞 Rice Kimchi Pancakes</h3>
                 <p>A healthy and delicious fusion snack that combines Korean flavors with crispy rice paper texture. Perfect for students looking for a nutritious and easy-to-make meal!</p>
             </div>
 
